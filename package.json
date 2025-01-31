@@ -1,0 +1,11 @@
+{
+  "name": "folio-2025",
+  "version": "1.0.0",
+  "description": "A portfolio website to introduce myself and present my work.",
+  "scripts": {
+    "start": "vite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
