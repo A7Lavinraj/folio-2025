@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "A portfolio website to introduce myself and present my work.",
   "scripts": {
-    "start": "vite"
+    "build": "vite build",
+    "start": "vite preview",
+    "dev": "vite"
   },
   "keywords": [],
   "author": "",

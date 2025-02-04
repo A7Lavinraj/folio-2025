@@ -1,0 +1,33 @@
+@import "keyframes.css";
+
+.loader {
+  inset: 0;
+  position: fixed;
+  background: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  overflow: hidden;
+  transition: height 0.5s;
+  height: 100vh;
+}
+
+.loader.hidden {
+  height: 0;
+}
+
+.loader__logo {
+  stroke: #F4DFC8;
+}
+
+.path__en {
+  stroke-width: 16;
+  stroke-dasharray: 400;
+  stroke-dashoffset: 400;
+  animation: draw 2s linear 0.5s forwards;
+}
+
+.path__jp {
+  animation: fade-in 3s linear forwards;
+}
