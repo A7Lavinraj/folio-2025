@@ -9,5 +9,12 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "three": "^0.173.0",
+    "vite": "^6.0.11"
+  },
+  "devDependencies": {
+    "lil-gui": "^0.20.0"
+  }
 }

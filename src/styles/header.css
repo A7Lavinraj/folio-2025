@@ -19,7 +19,7 @@
 }
 
 .loader__logo {
-  stroke: #F4DFC8;
+  stroke: #FFFFFF;
 }
 
 .path__en {
@@ -31,4 +31,27 @@
 
 .path__jp {
   animation: fade-in 3s linear forwards;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  text-align: center;
+}
+
+.main svg, .main h1 {
+  opacity: 0;
+  transform: translateY(2rem);
+  transition: opacity 0.8s ease-in 2s, transform 0.8s ease-in 2s;
+}
+
+.main.visible svg, .main.visible h1 {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.main svg {
+  width: 6rem;
 }
