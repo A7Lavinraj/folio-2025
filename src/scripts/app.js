@@ -13,6 +13,11 @@ export default class App {
     this.setObjects();
     this.setResizer();
     this.setAnimationLoop();
+
+    if (import.meta.env.DEV) {
+      this.axesHelper = new THREE.AxesHelper(10);
+      this.scene.add(this.axesHelper);
+    }
   }
 
   setRenderer() {
