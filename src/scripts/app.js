@@ -54,11 +54,6 @@ export default class App {
       speed: 0.05,
       path: "/models/sword.glb",
     });
-    this.animate = false;
-
-    setTimeout(() => {
-      this.animate = true;
-    }, 3500);
   }
 
   setResizer() {
@@ -71,10 +66,7 @@ export default class App {
 
   setAnimationLoop() {
     this.renderer.setAnimationLoop(() => {
-      if (this.animate) {
-        this.sword.animate(2);
-      }
-
+      this.sword.startAnimationWithDelay(3500);
       this.renderer.render(this.scene, this.camera);
     });
   }

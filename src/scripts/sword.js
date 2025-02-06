@@ -9,7 +9,6 @@ export default class Sword extends Model {
     this.rotationSpeed = Math.PI / 120;
     this.easingFactor = 0.99;
     this.position.y = this.startY;
-    this.animationActive = true;
   }
 
   animate() {
@@ -22,5 +21,7 @@ export default class Sword extends Model {
       this.gltf.scene.position.y = this.position.y;
       this.gltf.scene.rotation.y += this.rotationSpeed;
     }
+
+    window.requestAnimationFrame(() => this.animate());
   }
 }

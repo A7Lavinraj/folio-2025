@@ -7,6 +7,7 @@ export default class Model {
     this.position = options.position ?? { x: 0, y: 0, z: 0 };
     this.rotation = options.rotation ?? { x: 0, y: 0, z: 0 };
     this.path = options.path;
+    this.animationActive = false;
     this.loader = new GLTFLoader();
     this.loader.load(
       this.path,
@@ -36,6 +37,14 @@ export default class Model {
       this.gltf.scene.rotation.x = this.rotation.x;
       this.gltf.scene.rotation.y = this.rotation.y;
       this.gltf.scene.rotation.z = this.rotation.z;
+    }
+  }
+
+  startAnimationWithDelay(delay) {
+    if (!this.animationActive) {
+      this.animationActive = true;
+
+      setTimeout(() => this.animate(), delay);
     }
   }
 }
