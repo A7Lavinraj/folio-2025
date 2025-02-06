@@ -1,4 +1,4 @@
-import Model from "./model";
+import Model from "@scripts/model.js";
 
 export default class Sword extends Model {
   constructor(options) {

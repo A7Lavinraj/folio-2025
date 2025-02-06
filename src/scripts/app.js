@@ -1,5 +1,5 @@
 import * as THREE from "three";
-import Sword from "./sword";
+import Sword from "@scripts/sword";
 
 export default class App {
   constructor() {

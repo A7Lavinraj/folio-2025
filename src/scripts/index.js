@@ -1,4 +1,4 @@
-import App from "./app";
+import App from "@scripts/app";
 
 window.addEventListener("load", () => {
   setTimeout(() => {
